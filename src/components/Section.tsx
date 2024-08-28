@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils";
 
 type SectionProps = {
   id: string;
@@ -11,7 +11,7 @@ export default function Section({ id, children, className }: SectionProps) {
     <section
       id={id}
       className={cn(
-        "flex h-screen min-w-full snap-center snap-always flex-col items-center justify-center",
+        "flex min-h-[100dvh] min-w-full snap-center snap-always flex-col items-center justify-center",
         className,
       )}
     >

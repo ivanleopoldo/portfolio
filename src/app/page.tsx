@@ -7,7 +7,6 @@ import Home from "@/pages/Home";
 import Section from "@/components/Section";
 import Languages from "@/pages/Languages";
 import Projects from "@/pages/Projects";
-import Timeline from "@/pages/Timeline";
 import Contact from "@/pages/Contact";
 
 export default function Index() {
@@ -16,9 +15,9 @@ export default function Index() {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const options = {
-      root: null, // viewport
+      root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Trigger when 50% of the section is visible
+      threshold: 0.5,
     };
 
     const sectionArray = Array.from(sections).map((section) => section.id);
@@ -44,9 +43,9 @@ export default function Index() {
   }, []);
 
   return (
-    <main>
+    <main className="flex h-[100dvh] flex-col-reverse bg-[#262626]">
       <NavigationBar activeIndex={activeSection} />
-      <div className="content h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth transition-colors duration-1000">
+      <div className="content snap-y snap-mandatory overflow-x-hidden overflow-y-scroll scroll-smooth transition-colors duration-1000">
         <Section id="home">
           <Home />
         </Section>
@@ -55,9 +54,6 @@ export default function Index() {
         </Section>
         <Section id="projects">
           <Projects />
-        </Section>
-        <Section id="timeline">
-          <Timeline />
         </Section>
         <Section id="contact">
           <Contact />

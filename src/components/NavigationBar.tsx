@@ -2,7 +2,6 @@ import Link from "next/link";
 import { TiHome } from "react-icons/ti";
 import { IoIosRocket } from "react-icons/io";
 import { HiBriefcase } from "react-icons/hi";
-import { FaGraduationCap } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa";
 
 type NavigationBarProps = {
@@ -11,13 +10,13 @@ type NavigationBarProps = {
 
 export default function NavigationBar({ activeIndex }: NavigationBarProps) {
   const colors = {
-    active: "text-orange-600",
-    inactive: "text-black",
+    active: "text-[#F2622E]",
+    inactive: "text-[#262626]",
   };
 
   return (
-    <div className="fixed left-6 top-1/2 -translate-y-1/2 transform rounded-full bg-zinc-200 p-4">
-      <ul className="flex flex-col gap-3 text-2xl">
+    <div className="m-6 rounded-full bg-[#F2DFD9] p-4 md:fixed md:left-6 md:top-1/2 md:m-0 md:-translate-y-1/2 md:transform">
+      <ul className="flex flex-row justify-between text-4xl md:flex-col md:gap-3 md:text-2xl">
         <li className={activeIndex === 0 ? colors.active : colors.inactive}>
           <Link href="#home">
             <TiHome />
@@ -34,11 +33,6 @@ export default function NavigationBar({ activeIndex }: NavigationBarProps) {
           </Link>
         </li>
         <li className={activeIndex === 3 ? colors.active : colors.inactive}>
-          <Link href="#timeline">
-            <FaGraduationCap />
-          </Link>
-        </li>
-        <li className={activeIndex === 4 ? colors.active : colors.inactive}>
           <Link href="#contact">
             <IoIosRocket />
           </Link>
