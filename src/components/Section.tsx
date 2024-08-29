@@ -11,7 +11,7 @@ export default function Section({ id, children, className }: SectionProps) {
     <section
       id={id}
       className={cn(
-        "flex min-h-[100dvh] min-w-full snap-center snap-always flex-col items-center justify-center",
+        "flex h-[95dvh] min-w-full snap-center snap-always flex-col items-center justify-center",
         className,
       )}
     >

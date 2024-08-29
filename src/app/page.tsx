@@ -44,7 +44,9 @@ export default function Index() {
 
   return (
     <main className="flex h-[100dvh] flex-col-reverse bg-[#262626]">
-      <NavigationBar activeIndex={activeSection} />
+      <div className="flex items-center justify-center">
+        <NavigationBar activeIndex={activeSection} />
+      </div>
       <div className="content snap-y snap-mandatory overflow-x-hidden overflow-y-scroll scroll-smooth transition-colors duration-1000">
         <Section id="home">
           <Home />

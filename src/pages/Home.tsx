@@ -6,8 +6,11 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="flex flex-row">
-      <div className="flex flex-col-reverse items-center justify-center gap-2 md:flex-row md:gap-5">
+    <div className="flex flex-row overflow-hidden">
+      <div className="flex flex-col items-center justify-center gap-2 md:flex-row md:gap-5">
+        <div className="px-28 md:p-0">
+          <Image src={"/photo.png"} alt="prof pic" width={400} height={400} />{" "}
+        </div>
         <div className="flex flex-col">
           <ThemedText className="text-3xl font-medium md:text-6xl">
             <div className="flex flex-col text-center md:text-end">
@@ -33,9 +36,6 @@ export default function Home() {
               <FaGithub size={35} />
             </div>
           </div>
-        </div>
-        <div className="px-28 md:p-0">
-          <Image src={"/photo.png"} alt="prof pic" width={400} height={400} />{" "}
         </div>
       </div>
     </div>

@@ -15,8 +15,8 @@ export default function NavigationBar({ activeIndex }: NavigationBarProps) {
   };
 
   return (
-    <div className="m-6 rounded-full bg-[#F2DFD9] p-4 md:fixed md:left-6 md:top-1/2 md:m-0 md:-translate-y-1/2 md:transform">
-      <ul className="flex flex-row justify-between text-4xl md:flex-col md:gap-3 md:text-2xl">
+    <div className="m-6 w-1/2 rounded-lg bg-[#F2DFD9] p-4 md:fixed md:left-6 md:top-1/2 md:m-0 md:w-auto md:-translate-y-1/2 md:transform md:rounded-full">
+      <ul className="flex flex-row justify-between text-2xl md:flex-col md:gap-3 md:text-2xl">
         <li className={activeIndex === 0 ? colors.active : colors.inactive}>
           <Link href="#home">
             <TiHome />
