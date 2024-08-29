@@ -31,9 +31,30 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-row justify-center gap-2 text-[#F2DFD9]">
-              <RiInstagramFill size={35} />
-              <FaFacebookSquare size={35} />
-              <FaGithub size={35} />
+              <a
+                className="hover:text-[#8D41BF]"
+                href="https://instagram.com/ivanleocl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RiInstagramFill size={35} />
+              </a>
+              <a
+                className="hover:text-[#7A36D9]"
+                href="https://facebook.com/milktt1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookSquare size={35} />
+              </a>
+              <a
+                className="hover:text-[#592EF2]"
+                href="https://github.com/ivanleopoldo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub size={35} />
+              </a>
             </div>
           </div>
         </div>
