@@ -8,7 +8,7 @@ export async function GET(req: Request, { params }: GetParams) {
   const filename = params.filename;
 
   const RESUME =
-    "https://drive.google.com/uc?export=download&id=1kJbsaOM_Jy-PYqm9p5-viDLDz9U8QAD3";
+    "https://drive.google.com/uc?export=download&id=1lPs6_zd6fGLHq0NNFpfrufZT6R2Yj4Kf/";
 
   const response = await fetch(RESUME);
 
