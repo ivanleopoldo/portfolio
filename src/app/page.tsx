@@ -10,6 +10,7 @@ import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 
 import ParticleEffect from "@/components/ParticleEffect";
+import ResumeButton from "@/components/ResumeButton";
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState(0);
@@ -45,8 +46,9 @@ export default function Index() {
   }, []);
 
   return (
-    <main className="flex h-[100dvh] flex-col">
+    <main className="flex h-[100dvh] flex-col scrollbar-hide">
       <ParticleEffect />
+      <ResumeButton />
       <div className="content snap-y snap-mandatory overflow-x-hidden overflow-y-scroll scroll-smooth transition-colors duration-1000">
         <Section id="home">
           <Home />
