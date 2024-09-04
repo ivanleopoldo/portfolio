@@ -1,42 +1,36 @@
 "use client";
 
 import ThemedText from "@/components/ThemedText";
+import Contacts from "@/components/Contacts";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col w-3/4">
-      <form className="flex h-[100dvh] flex-col items-center justify-center gap-4 text-[#F2DFD9]">
+    <div className="flex w-3/4 flex-col items-center justify-center">
+      <div className="flex flex-col gap-4 md:w-2/3">
         <ThemedText className=" text-3xl font-semibold md:text-5xl">
-          CONTACT ME!
+          About Me!
         </ThemedText>
-        <div className="flex gap-4">
-          <div className="flex w-full flex-col">
-            <label>Name</label>
-            <input
-              className="w-full rounded-md bg-[#353434] p-2 placeholder-[#525050] focus:outline-none"
-              type="text"
-            />
-          </div>
-          <div className="flex w-full flex-col">
-            <label>Email</label>
-            <input
-              className="w-full rounded-md bg-[#353434] p-2 placeholder-[#525050] focus:outline-none"
-              type="email"
-            />
-          </div>
+        <ThemedText className="flex gap-4">
+          I am a young developer who is passionate about being active and fixing
+          things. I love sports, music, and cars. I played soccer at a regional
+          level back in Highschool and I regularly play guitar, piano, and bass.
+          I also love cars and I am currently working on and fixing an old car.
+          I love Japan as well and I have learnt Japanese in CEVAS back in
+          2019-2021. I am a very curious person and I love to learn new things.
+        </ThemedText>
+        <div className="flex flex-col">
+          <ThemedText className="font-medium">Please Contact me at:</ThemedText>
+          <ThemedText className="">ivanleopoldoc@gmail.com</ThemedText>
+          <ThemedText className="relative flex items-center py-5">
+            <div className="flex-grow border-t border-[#F2DFD9]"></div>
+            <span className="mx-4 flex-shrink font-bold text-[#F2DFD9]">
+              OR
+            </span>
+            <div className="flex-grow border-t border-[#F2DFD9]"></div>
+          </ThemedText>
+          <Contacts />
         </div>
-        <div className="w-full items-start">
-          <label>What can I do for you?</label>
-        </div>
-        <div
-          className="-mt-3.5 h-1/6 w-full rounded-md bg-[#353434] p-2 placeholder-[#525050] focus:outline-none "
-          contentEditable
-        />
-        <input
-          className="w-full rounded-lg bg-[#8D41BF] p-2 hover:bg-[#632E86]"
-          type="submit"
-        />
-      </form>
+      </div>
     </div>
   );
 }
