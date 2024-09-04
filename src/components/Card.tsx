@@ -9,10 +9,10 @@ type CardProps = {
 
 export default function Card({ title, description, photo, link }: CardProps) {
   return (
-    <div className="w-64 overflow-hidden text-ellipsis rounded-lg bg-[#353434] shadow-lg md:h-64">
+    <div className="w-64 overflow-hidden text-ellipsis rounded-lg bg-[#353434] shadow-lg hover:h-1/3 md:h-64">
       <a href={link} target="_blank" rel="noreferrer">
         <img
-          className="h-20 w-full rounded-tl-lg rounded-tr-lg object-cover"
+          className="h-20 w-full rounded-tl-lg rounded-tr-lg object-cover md:h-1/3"
           src={photo}
           alt={photo}
         />

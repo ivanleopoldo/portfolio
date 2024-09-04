@@ -9,6 +9,8 @@ import Languages from "@/pages/Languages";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 
+import ParticleEffect from "@/components/ParticleEffect";
+
 export default function Index() {
   const [activeSection, setActiveSection] = useState(0);
 
@@ -43,10 +45,8 @@ export default function Index() {
   }, []);
 
   return (
-    <main className="flex h-[100dvh] flex-col-reverse bg-[#262626]">
-      <div className="flex items-center justify-center">
-        <NavigationBar activeIndex={activeSection} />
-      </div>
+    <main className="flex h-[100dvh] flex-col">
+      <ParticleEffect />
       <div className="content snap-y snap-mandatory overflow-x-hidden overflow-y-scroll scroll-smooth transition-colors duration-1000">
         <Section id="home">
           <Home />
@@ -60,6 +60,9 @@ export default function Index() {
         <Section id="contact">
           <Contact />
         </Section>
+      </div>
+      <div className="flex items-center justify-center">
+        <NavigationBar activeIndex={activeSection} />
       </div>
     </main>
   );

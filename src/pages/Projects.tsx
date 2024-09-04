@@ -7,7 +7,7 @@ export default function Projects() {
       <ThemedText className="text-3xl font-semibold md:text-5xl">
         Projects
       </ThemedText>
-      <div className="flex flex-col gap-4 overflow-x-scroll md:flex-row">
+      <div className="flex flex-col gap-4 md:flex-row">
         <Card
           title="MangaNato Scraper"
           description="A cross-platform mobile application used to test React Native Frontend and Python Backend efficiency and functionality."

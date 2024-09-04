@@ -1,19 +1,22 @@
 import ThemedText from "@/components/ThemedText";
 import Image from "next/image";
 import Contacts from "@/components/Contacts";
+import ParticleEffect from "@/components/ParticleEffect";
 
 export default function Home() {
   return (
     <div className="flex flex-row overflow-hidden">
       <div className="flex flex-col items-center justify-center gap-2 md:flex-row md:gap-5">
         <div className="px-28 md:p-0">
-          <Image src={"/photo.png"} alt="prof pic" width={400} height={400} />{" "}
+          <Image src={"/photo.png"} alt="prof pic" width={300} height={300} />{" "}
         </div>
         <div className="flex flex-col">
           <ThemedText className="text-3xl font-medium md:text-6xl">
             <div className="flex flex-col text-center md:text-end">
-              <div className="-mb-3">IVAN</div>
-              <div className="-mb-2">LEOPOLDO</div>
+              <div className="md:text-start">
+                <div className="-mb-3 md:-ml-8">IVAN</div>
+                <div className="-mb-2">LEOPOLDO</div>
+              </div>
               <p className="inline-block bg-gradient-to-r from-[#592EF2] to-[#F2622E] bg-clip-text text-xl font-extralight text-transparent">
                 Portfolio
               </p>
